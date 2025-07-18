@@ -1,3 +1,6 @@
+# SBCL source code (large external repository)
+sbcl-source/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
