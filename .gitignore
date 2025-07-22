@@ -1,13 +1,46 @@
-# SBCL source code (large external repository)
-sbcl-source/
+# SBCL Macro Research - Clean .gitignore
 
-# Byte-compiled / optimized / DLL files
+# Python
 __pycache__/
 *.py[cod]
 *$py.class
-
-# Distribution / packaging
+*.so
 .Python
+env/
+venv/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Research Output (keep samples only)
+output/
+results/
+analysis/
+**/test_case_*.lisp
+crash_dumps/
+binary_diffs/
+
+# SBCL
+*.fasl
+*.fas
+*.lib
+sbcl-source/
+
+# Large generated directories  
+isolation_output/bypass_test_*.lisp
+!isolation_output/bypass_test_000006.lisp  # Keep successful example
+
+# Logs and temporary
+*.log
+*.tmp
 build/
 develop-eggs/
 dist/
